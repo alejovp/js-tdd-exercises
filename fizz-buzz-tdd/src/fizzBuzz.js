@@ -15,6 +15,7 @@
 } */
 
 // Using high order functions
+
 function fizzBuzz () { // eslint-disable-line no-unused-vars
   // var resultArray = Array.apply(null, {length: 100})
   var resultArray = []
