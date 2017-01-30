@@ -42,4 +42,13 @@ describe('A function "anagrams" that', function () {
       expect(result).toEqual(['hola', 'hoal', 'hloa', 'hlao', 'haol', 'halo', 'ohla', 'ohal', 'olha', 'olah', 'oahl', 'oalh', 'lhoa', 'lhao', 'loha', 'loah', 'laho', 'laoh', 'ahol', 'ahlo', 'aohl', 'aolh', 'alho', 'aloh'])
     })
   })
+
+  describe('The returned Array should NOT contain:', function () {
+    it('Repeated words', function () {
+      var result1 = anagrams()
+      var result2 = anagrams('')
+      expect(result1).toEqual([])
+      expect(result2).toEqual([])
+    })
+  })
 })
